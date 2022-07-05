@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navbar from "./Components/Navbar";
+import NewsBox from "./Components/NewsBox";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from "./Components/Home";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+       <Router>
+        <Navbar/> 
+        <Routes>
+          <Route path="/" element={<Home/>}></Route> 
+          <Route path="/business" element={<NewsBox key="business" pageSize={9} country="in" category="business"/>}></Route> 
+          <Route path="/entertainment" element={<NewsBox key="entertainment" pageSize={9} country="in" category="entertainment"/>}></Route> 
+          <Route path="/general" element={<NewsBox key="general" pageSize={9} country="in" category="general"/>}></Route> 
+          <Route path="/health" element={<NewsBox key="health" pageSize={9} country="in" category="health"/>}></Route> 
+          <Route path="/science" element={<NewsBox key="science" pageSize={9} country="in" category="science"/>}></Route> 
+          <Route path="/sports" element={<NewsBox key="sports" pageSize={9} country="in" category="sports"/>}></Route> 
+          <Route path="/technology" element={<NewsBox key="technology" pageSize={9} country="in" category="technology"/>}></Route> 
+        </Routes>
+        </Router>
+    </>
   );
 }
 
