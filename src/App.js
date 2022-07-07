@@ -12,8 +12,8 @@ function App() {
        <Router>
         <Navbar/> 
         <Routes>
-          <Route path="/" element={<Home/>}></Route> 
-          <Route path="/business" element={<NewsBox key="business" pageSize={9} country="in" category="business"/>}></Route> 
+          <Route exact path="/" element={<Home/>}></Route> 
+          <Route path="/:business" element={<NewsBox key="business" pageSize={9} country="in" category="business"/>}></Route> 
           <Route path="/entertainment" element={<NewsBox key="entertainment" pageSize={9} country="in" category="entertainment"/>}></Route> 
           <Route path="/general" element={<NewsBox key="general" pageSize={9} country="in" category="general"/>}></Route> 
           <Route path="/health" element={<NewsBox key="health" pageSize={9} country="in" category="health"/>}></Route> 
