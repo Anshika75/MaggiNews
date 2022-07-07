@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/MaggiNews/static/css/main.66ef5880.css",
+    "main.js": "/MaggiNews/static/js/main.408dab75.js",
+    "static/js/787.aac73b43.chunk.js": "/MaggiNews/static/js/787.aac73b43.chunk.js",
+    "static/media/MaggiNews.png": "/MaggiNews/static/media/MaggiNews.867a1378fa4fff3c9279.png",
+    "index.html": "/MaggiNews/index.html",
+    "main.66ef5880.css.map": "/MaggiNews/static/css/main.66ef5880.css.map",
+    "main.408dab75.js.map": "/MaggiNews/static/js/main.408dab75.js.map",
+    "787.aac73b43.chunk.js.map": "/MaggiNews/static/js/787.aac73b43.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66ef5880.css",
+    "static/js/main.408dab75.js"
+  ]
+}
