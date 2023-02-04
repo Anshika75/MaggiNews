@@ -7,7 +7,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-black z-20D absolute w-full">
+      <nav className="bg-black z-20 absolute top-0 left-0 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex flex-row items-center">
@@ -15,7 +15,7 @@ function Nav() {
                 <img
                   className="h-16 w-16 rounded-full"
                   src={magginewsLogo}
-                  alt="MAggiNews"
+                  alt="MaggiNews"
                 />
                 <p className=" font-Exo py-2 text-2xl text-yellow font-medium">
                     MaggiNews
