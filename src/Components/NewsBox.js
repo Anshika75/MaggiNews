@@ -82,7 +82,7 @@ export default class NewsBox extends Component {
   render() {
     return (
       <>
-        <div className="flex flex-col items-center absolute top-[60px] pb-7">
+        <div className="flex flex-col items-center justify-center min-h-screen w-full mt-[60px] pb-7">
           <div className="text-3xl text-black text-center mt-7 font-Exo font-semibold">
             {" "}
             {this.capitalizeFirstLetter(this.props.category)} News
